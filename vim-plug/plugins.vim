@@ -22,4 +22,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Status line
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    " Devicons always the last one to load
+    Plug 'ryanoasis/vim-devicons'
     call plug#end()
