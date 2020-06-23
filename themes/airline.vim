@@ -15,7 +15,7 @@ let g:airline_theme='gruvbox'
 set showtabline=2
 
 let g:airline_section_c = '%t'
-let g:airline_section_y =''
+
 
 let g:bufferline_echo = 0
 
@@ -33,3 +33,9 @@ let g:bufferline_echo = 0
       \ 'S'  : 'S',
       \ '' : 'S',
       \ }
+
+" Automatically displays all buffers when there's only one tab open.
+let g:airline#extensions#tabline#enabled = 1
+
+" formatea tabline 
+let g:airline#extensions#tabline#formatter = 'unique_tail'

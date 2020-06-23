@@ -20,6 +20,7 @@ nnoremap <c-u> viwU<Esc>
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
+nnoremap <leader>bd :bd<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -41,4 +42,5 @@ nnoremap <C-l> <C-w>l
 " make it easy to edit the _gvimrc file
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 " toggle NerdTree
-nmap <Leader>kb :NERDTreeToggle<cr>
+"nmap <Leader>kb :NERDTreeToggle<cr>
+nmap <C-k><C-b> :NERDTreeToggle<cr>

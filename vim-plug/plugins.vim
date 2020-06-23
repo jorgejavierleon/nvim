@@ -24,4 +24,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
     " Devicons always the last one to load
     Plug 'ryanoasis/vim-devicons'
-    call plug#end()
+    " FZF
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    Plug 'airblade/vim-rooter'
+    " Start screen
+    Plug 'mhinz/vim-startify' 
+    " Git
+    Plug 'tpope/vim-fugitive'
+    "Tmux integration
+    Plug 'benmills/vimux' 
+    "Tets
+    Plug 'vim-test/vim-test'
+call plug#end()
