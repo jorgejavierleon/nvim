@@ -3,10 +3,10 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize +2<CR>
-nnoremap <M-l>    :vertical resize -2<CR>
+"nnoremap <M-j>    :resize -2<CR>
+"nnoremap <M-k>    :resize +2<CR>
+"nnoremap <M-h>    :vertical resize +2<CR>
+"nnoremap <M-l>    :vertical resize -2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -24,6 +24,7 @@ nnoremap <leader>bd :bd<CR>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
+inoremap <C-s> <ESC> :w<CR>
 " Alternate way to quit
 nnoremap <C-Q> :wq!<CR>
 " <TAB>: completion.
@@ -43,4 +44,9 @@ nnoremap <C-l> <C-w>l
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 " toggle NerdTree
 "nmap <Leader>kb :NERDTreeToggle<cr>
-nmap <C-k><C-b> :NERDTreeToggle<cr>
+nmap <leader>kb :NERDTreeToggle<cr>
+" comentary
+nmap <C-_> gcc
+
+"Command para cerrar todos los buffers exceptp el actual
+command! BufOnly execute '%bdelete|edit #|normal `"'

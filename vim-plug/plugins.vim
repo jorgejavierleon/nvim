@@ -32,8 +32,18 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mhinz/vim-startify' 
     " Git
     Plug 'tpope/vim-fugitive'
+    Plug 'mhinz/vim-signify'
     "Tmux integration
     Plug 'benmills/vimux' 
     "Tets
     Plug 'vim-test/vim-test'
+    "Coments
+    Plug 'tpope/vim-commentary'
+    "Surround
+    Plug 'tpope/vim-surround'
+    "Vue
+    Plug 'posva/vim-vue'
+    "Emmet
+    Plug 'mattn/emmet-vim'
+
 call plug#end()

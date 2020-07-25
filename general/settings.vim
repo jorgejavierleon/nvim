@@ -14,8 +14,8 @@ set splitbelow                          " Horizontal splits will automatically b
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
-set tabstop=2                           " Insert 2 spaces for a tab
-set shiftwidth=2                        " Change the number of space characters inserted for indentation
+set tabstop=4                           " Insert 4 spaces for a tab
+set shiftwidth=4                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
@@ -23,7 +23,7 @@ set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number                              " Line numbers
 set relativenumber                      " Activate line numbers
-set cursorline                          " Enable highlighting of the current line
+"set cursorline                          " Enable highlighting of the current line
 "set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
@@ -41,6 +41,7 @@ set smartcase                           " Case sensitive when uc present
 set wildmenu                            " Show list instead of just completing
 set scrolljump=5                        " Lines to scroll when cursor leaves screen
 set scrolloff=3                         " Minimum lines to keep above and below cursor
+set nohlsearch                          " No highlighting ojn search
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
@@ -48,3 +49,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 cmap w!! w !sudo tee %
 "change background color for line number
 hi LineNr guibg=bg
+
+if has("autocmd")
+    filetype on
+    autocmd FileType javascript,javascriptreact,vue setlocal ts=2 sts=2 sw=2 et
+endif
+
