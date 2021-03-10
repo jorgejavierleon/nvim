@@ -47,6 +47,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'mattn/emmet-vim'
     "Snippets
     Plug 'honza/vim-snippets'
-    Plug 'SirVer/ultisnips'
+    "Plug 'SirVer/ultisnips'
+    "Xdebug
+    Plug 'vim-vdebug/vdebug'
 
 call plug#end()
