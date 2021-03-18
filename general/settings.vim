@@ -41,7 +41,7 @@ set smartcase                           " Case sensitive when uc present
 set wildmenu                            " Show list instead of just completing
 set scrolljump=5                        " Lines to scroll when cursor leaves screen
 set scrolloff=3                         " Minimum lines to keep above and below cursor
-set nohlsearch                          " No highlighting ojn search
+set nohlsearch                          " No highlighting on search
 let g:PHP_outdentphpescape = 0          " php tags will match html
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
